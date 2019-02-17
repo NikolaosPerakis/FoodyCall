@@ -286,26 +286,28 @@ Users.prototype.updateQuery = function(filters) {
   if (filters.category !== '') {
     query_description += filters.category + ' places';
   } else {
-    query_description += 'any restaurant';
+    query_description += 'all people ';
   }
 
   if (filters.city !== '') {
     query_description += ' in ' + filters.city;
   } else {
-    query_description += ' located anywhere';
+    query_description += 'in Palo Alto ';
   }
 
   if (filters.price !== '') {
-    query_description += ' with a price of ' + filters.price;
+    query_description += 'with a price of ' + filters.price;
   } else {
-    query_description += ' with any price';
+    query_description += '';
   }
 
   if (filters.sort === 'Rating') {
-    query_description += ' sorted by rating';
+    query_description += '';
   } else if (filters.sort === 'Reviews') {
     query_description += ' sorted by # of reviews';
   }
+
+  query_description += 'offering delicious homecooked meals. Yummy!'
 
   this.viewList(filters, query_description);
 };
