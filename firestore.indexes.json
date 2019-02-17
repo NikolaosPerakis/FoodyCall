@@ -5,26 +5,12 @@
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "price",
-          "order": "ASCENDING"
-        },
-        {
-          "fieldPath": "avgRating",
-          "order": "DESCENDING"
-        }
-      ]
-    },
-    {
-      "collectionGroup": "restaurants",
-      "queryScope": "COLLECTION",
-      "fields": [
-        {
           "fieldPath": "city",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "avgRating",
-          "order": "DESCENDING"
+          "fieldPath": "price",
+          "order": "ASCENDING"
         }
       ]
     },
@@ -47,11 +33,11 @@
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "city",
+          "fieldPath": "price",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "numRatings",
+          "fieldPath": "avgRating",
           "order": "DESCENDING"
         }
       ]
@@ -79,8 +65,8 @@
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "price",
-          "order": "ASCENDING"
+          "fieldPath": "numRatings",
+          "order": "DESCENDING"
         }
       ]
     },
@@ -93,8 +79,22 @@
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "price",
+          "fieldPath": "numRatings",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "restaurants",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "city",
           "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "avgRating",
+          "order": "DESCENDING"
         }
       ]
     },
@@ -107,8 +107,8 @@
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "numRatings",
-          "order": "DESCENDING"
+          "fieldPath": "price",
+          "order": "ASCENDING"
         }
       ]
     }
